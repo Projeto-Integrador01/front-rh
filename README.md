@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sistema de Cadastro de RH
 
-Currently, two official plugins are available:
+O sistema de cadastro de RH foi construído visando facilitar a gestão das informações dos colaboradores. Permite o cadastro, consulta, atualização e exclusão de dados de forma rápida e segura.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tecnologias
+- [React](<https://pt-br.reactjs.org/>)
+- [TypeScript](<https://www.typescriptlang.org/>)
+- [Node.js](<https://nodejs.org/en/>)
+- [Git](<https://git-scm.com/>)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Pré-requisitos
 
-- Configure the top-level `parserOptions` property like this:
+Certifique-se de ter o **Yarn** instalado globalmente. Se não tiver, instale com:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```sh
+npm install --global yarn
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Como rodar a aplicação
+Clone o projeto dentro de uma pasta desejada
+```bash
+git clone https://github.com/Projeto-Integrador01/front-rh.git 
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+Entre dentro da pasta do projeto
+```bash
+cd front-rh
+```
+
+Abra o projeto no vscode
+```bash
+code .
+```
+Instale as dependências do projeto
+```bash
+yarn install
+```
+Inicie o servidor de desenvolvimento e abra no navegador
+```bash
+yarn dev
+o
 ```

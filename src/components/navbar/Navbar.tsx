@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="w-full text-white flex justify-center py-4 bg-[rgb(0,105,92)]">
+    <div className="w-full text-white flex justify-center py-4 bg-[rgb(0,105,92)] px-4">
       <div className="container flex justify-between text-lg">
-        <Link to="/home" className="text-2xl font-bold text-white">
+        <Link to="/home" className="text-2xl font-bold text-white hover:text-gray-300">
           Home
         </Link>
 
@@ -12,7 +12,7 @@ function Navbar() {
           <Link to="/sobre" className="text-white hover:text-gray-300">
             Sobre Nós
           </Link>
-          <Link to="/colaboradores" className="hover:underline">
+          <Link to="/colaborador" className=" hover:text-gray-300">
             Colaboradores
           </Link>
         </div>
